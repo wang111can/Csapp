@@ -20,7 +20,7 @@
 > 运行在 进程的 上下文中 共享同样的 代码 和 全局数据 
 
 ### 虚拟内存
-![alt text](/Book_note/virtual_memory.png "virtual_memory")
+![Image text](\virtual_memory.png)
 
 
 ### 上下文
