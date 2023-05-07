@@ -25,7 +25,7 @@
 > 指使用并发来使一个系统运行的 更快
 
 ### 虚拟内存
-![Image text](/Book_note/virtual_memory.png)
+![image text](/Book_note/virtual_memory.png)
 
 
 ### 上下文
