@@ -143,7 +143,9 @@ NOTES:
  *   Rating: 1
  */
 int bitXor(int x, int y) {
-  return 2;
+  int l1 = ~(x & y);
+  int l2 = ~((~x) & (~y));
+  return l1 & l2;
 }
 /* 
  * tmin - return minimum two's complement integer 
@@ -151,9 +153,9 @@ int bitXor(int x, int y) {
  *   Max ops: 4
  *   Rating: 1
  */
-int tmin(void) {
+int tmin(void) { 
 
-  return 2;
+  return (1 << 31);
 
 }
 //2
@@ -165,7 +167,10 @@ int tmin(void) {
  *   Rating: 1
  */
 int isTmax(int x) {
-  return 2;
+  int t = x + 1; // 最大值 + 1 == 最小值 最小值 + 最小值溢出截断为0
+  int i = t + t;
+  int j = t + t;
+  return !(t + t);  // 
 }
 /* 
  * allOddBits - return 1 if all odd-numbered bits in word set to 1
