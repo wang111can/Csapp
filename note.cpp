@@ -10,3 +10,4 @@ int isTmax(int x) {
 int main() {
     printf("%lld", -1e20 + (-1e20 + 1));
 }
+
